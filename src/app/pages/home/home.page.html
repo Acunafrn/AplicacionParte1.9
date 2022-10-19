@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+            <ion-menu-button autoHide="false"></ion-menu-button>
+
+        </ion-buttons>
+        <ion-text slot="end">
+            <p>{{username || 'Anónimo'}}</p>
+        </ion-text>
+        <ion-icon slot="end" name="person-circle-outline" class="ion-padding" size="large"></ion-icon>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-text class="ion-text-center">
+        <h1>Flujo de Actividades</h1>
+
+    </ion-text>
+
+    <ion-button (click)="getEstudiantes()">Default</ion-button>
+</ion-content>
